@@ -1,18 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Friends And Foes | Indie Game Studio</title>
-<meta name="description" content="Friends And Foes is an indie game studio from Rajkot, India. We make games where relationships matter.">
-<link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friends And Foes Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="Header">
+    <div class="container">
+      <div class="Header-item">
+        <h1 class="logo">
+          <span class="logo-bracket">[</span>Friends And Foes<span class="logo-bracket">]</span>
+        </h1>
+      </div>
+      <nav class="Header-item Header-item--full">
+        <a href="#work" class="Header-link">Work</a>
+        <a href="#about" class="Header-link">About</a>
+        <a href="#contact" class="Header-link">Contact</a>
+      </nav>
+      <div class="Header-item">
+        <a href="https://github.com" class="btn btn-sm btn-primary" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </header>
 
-<style>
-  :root {
-    --bg-default: #ffffff;
-    --bg-subtle: #f6f8fa;
-    --bg-inset: #f6f8fa;
-    --border-default: #d0d7de;
-    --border-muted: #d8dee4;
-    --fg-default: #1
-</style>
+  <main class="container-lg">
+    <section class="hero">
+      <div class="gutter-condensed">
+        <h2 class="hero-title">We build for both sides.</h2>
+        <p class="hero-subtitle color-fg-muted">
+          Friends And Foes is a creative studio crafting code, design, and experiences. 
+          From open source to client work, we ship.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="Subhead">
+        <h2 class="Subhead-heading">Featured Repositories</h2>
+      </div>
+      <div class="grid">
+        <div class="Box">
+          <div class="Box-header">
+            <h3 class="Box-title">friends-foes-ui</h3>
+            <span class="Label Label--success">Public</span>
+          </div>
+          <div class="Box-body">
+            <p class="color-fg-muted">Our design system. React components, tokens, and docs.</p>
+          </div>
+          <div class="Box-footer">
+            <span class="repo-language-color" style="background-color: #3178c6;"></span>
+            <span class="color-fg-muted">TypeScript</span>
+            <span class="ml-3">★ 142</span>
+          </div>
+        </div>
+
+        <div class="Box">
+          <div class="Box-header">
+            <h3 class="Box-title">foes-engine</h3>
+            <span class="Label">Private</span>
+          </div>
+          <div class="Box-body">
+            <p class="color-fg-muted">Real-time multiplayer game engine built with Rust + WebGPU.</p>
+          </div>
+          <div class="Box-footer">
+            <span class="repo-language-color" style="background-color: #dea584;"></span>
+            <span class="color-fg-muted">Rust</span>
+            <span class="ml-3">★ 89</span>
+          </div>
+        </div>
+
+        <div class="Box">
+          <div class="Box-header">
+            <h3 class="Box-title">friend-bot</h3>
+            <span class="Label Label--success">Public</span>
+          </div>
+          <div class="Box-body">
+            <p class="color-fg-muted">Discord bot for community management and moderation.</p>
+          </div>
+          <div class="Box-footer">
+            <span class="repo-language-color" style="background-color: #f1e05a;"></span>
+            <span class="color-fg-muted">JavaScript</span>
+            <span class="ml-3">★ 256</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="Subhead">
+        <h2 class="Subhead-heading">README.md</h2>
+      </div>
+      <div class="Box markdown-body">
+        <h3>Hey, we're Friends And Foes 👋</h3>
+        <p>Small team. Big output. We believe good software comes from tension — between form and function, speed and quality, friends and foes.</p>
+        <ul>
+          <li><strong>Founded:</strong> 2024</li>
+          <li><strong>Based:</strong> Rajkot, IN + Remote</li>
+          <li><strong>Stack:</strong> TypeScript, Rust, Go, Python</li>
+          <li><strong>Motto:</strong> Ship fast, fix faster</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="Subhead">
+        <h2 class="Subhead-heading">Open an Issue</h2>
+      </div>
+      <div class="Box">
+        <div class="Box-body">
+          <p class="color-fg-muted mb-3">Want to work together? Drop us a line.</p>
+          <a href="mailto:hello@friendsandfoes.studio" class="btn btn-primary btn-block">
+            hello@friendsandfoes.studio
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="color-fg-muted">© 2026 Friends And Foes Studio</span>
+      <span class="color-fg-muted">Built with &lt;3 and GitHub Primer CSS</span>
+    </div>
+  </footer>
+</body>
+</html>
