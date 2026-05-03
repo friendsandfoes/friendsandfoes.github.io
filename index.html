@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color-mode="auto">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,109 +18,63 @@
         </h1>
       </div>
       <nav class="Header-item Header-item--full">
-        <a href="#work" class="Header-link">Work</a>
         <a href="#about" class="Header-link">About</a>
         <a href="#contact" class="Header-link">Contact</a>
+        <a href="https://friendsandfoesofficial.itch.io" class="Header-link" target="_blank">itch.io</a>
       </nav>
       <div class="Header-item">
-        <a href="https://github.com" class="btn btn-sm btn-primary" target="_blank">GitHub</a>
+        <button class="btn btn-sm" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="octicon sun" width="16" height="16" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-10a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 2zM8 13a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13zm7.75-5.25h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1.5zM3.75 7.75h-1.5a.75.75 0 0 1 0-1.5h1.5a.75.75 0 0 1 0-1.5zM12.03 4.22a.75.75 0 0 1 1.06 1.06l-1.06 1.06a.75.75 0 0 1-1.06-1.06l1.06-1.06zm-8.06 8.06a.75.75 0 0 1 1.06 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06zm1.06-8.06a.75.75 0 1 0-1.06 1.06l1.06 1.06a.75.75 0 1.06-1.06L4.97 4.22zm8.06 8.06a.75.75 0 1 0-1.06 1.06l1.06 1.06a.75.75 0 0 0 1.06-1.06l-1.06z"/></svg>
+          <svg class="octicon moon" width="16" height="16" viewBox="0 0 16 16"><path d="M9.598 1.591a.75.75 0 0 1 .785-.175 7 7 0 1 1-8.967 8.967.75.75 0 0 1 .961-.961 5.5 0 0 0 7.046-7.046.75.75 0 0 1 .175-.785z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
   <main class="container-lg">
     <section class="hero">
-      <div class="gutter-condensed">
-        <h2 class="hero-title">We build for both sides.</h2>
-        <p class="hero-subtitle color-fg-muted">
-          Friends And Foes is a creative studio crafting code, design, and experiences. 
-          From open source to client work, we ship.
-        </p>
-        <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">View Work</a>
-          <a href="#contact" class="btn">Get in Touch</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="section">
-      <div class="Subhead">
-        <h2 class="Subhead-heading">Featured Repositories</h2>
-      </div>
-      <div class="grid">
-        <div class="Box">
-          <div class="Box-header">
-            <h3 class="Box-title">friends-foes-ui</h3>
-            <span class="Label Label--success">Public</span>
-          </div>
-          <div class="Box-body">
-            <p class="color-fg-muted">Our design system. React components, tokens, and docs.</p>
-          </div>
-          <div class="Box-footer">
-            <span class="repo-language-color" style="background-color: #3178c6;"></span>
-            <span class="color-fg-muted">TypeScript</span>
-            <span class="ml-3">★ 142</span>
-          </div>
-        </div>
-
-        <div class="Box">
-          <div class="Box-header">
-            <h3 class="Box-title">foes-engine</h3>
-            <span class="Label">Private</span>
-          </div>
-          <div class="Box-body">
-            <p class="color-fg-muted">Real-time multiplayer game engine built with Rust + WebGPU.</p>
-          </div>
-          <div class="Box-footer">
-            <span class="repo-language-color" style="background-color: #dea584;"></span>
-            <span class="color-fg-muted">Rust</span>
-            <span class="ml-3">★ 89</span>
-          </div>
-        </div>
-
-        <div class="Box">
-          <div class="Box-header">
-            <h3 class="Box-title">friend-bot</h3>
-            <span class="Label Label--success">Public</span>
-          </div>
-          <div class="Box-body">
-            <p class="color-fg-muted">Discord bot for community management and moderation.</p>
-          </div>
-          <div class="Box-footer">
-            <span class="repo-language-color" style="background-color: #f1e05a;"></span>
-            <span class="color-fg-muted">JavaScript</span>
-            <span class="ml-3">★ 256</span>
-          </div>
-        </div>
+      <h2 class="hero-title">Friends And Foes Studio</h2>
+      <p class="hero-subtitle color-fg-muted">
+        We build for both sides.
+      </p>
+      <div class="hero-actions">
+        <a href="https://friendsandfoesofficial.itch.io" class="btn btn-primary" target="_blank">Play on itch.io</a>
+        <a href="#contact" class="btn">Get in Touch</a>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="Subhead">
-        <h2 class="Subhead-heading">README.md</h2>
+        <h2 class="Subhead-heading">About</h2>
       </div>
-      <div class="Box markdown-body">
-        <h3>Hey, we're Friends And Foes 👋</h3>
-        <p>Small team. Big output. We believe good software comes from tension — between form and function, speed and quality, friends and foes.</p>
-        <ul>
-          <li><strong>Founded:</strong> 2024</li>
-          <li><strong>Based:</strong> Rajkot, IN + Remote</li>
-          <li><strong>Stack:</strong> TypeScript, Rust, Go, Python</li>
-          <li><strong>Motto:</strong> Ship fast, fix faster</li>
-        </ul>
+      <div class="Box">
+        <div class="Box-body">
+          <p>
+            Friends And Foes is a creative studio based in Rajkot, IN. We make games, tools, and weird experiments. 
+            Small team. Big output. We believe good software comes from tension — between form and function, speed and quality, friends and foes.
+          </p>
+          <p class="mt-3 color-fg-muted">
+            Founded 2024. Currently shipping indie games and open tools. Ship fast, fix faster.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="Subhead">
-        <h2 class="Subhead-heading">Open an Issue</h2>
+        <h2 class="Subhead-heading">Contact</h2>
       </div>
       <div class="Box">
         <div class="Box-body">
-          <p class="color-fg-muted mb-3">Want to work together? Drop us a line.</p>
+          <p class="color-fg-muted mb-3">Want to collaborate, publish, or just say hi?</p>
           <a href="mailto:hello@friendsandfoes.studio" class="btn btn-primary btn-block">
             hello@friendsandfoes.studio
           </a>
+          <div class="mt-3">
+            <a href="https://friendsandfoesofficial.itch.io" class="btn btn-block" target="_blank">
+              itch.io/friendsandfoesofficial
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -129,8 +83,10 @@
   <footer class="footer">
     <div class="container">
       <span class="color-fg-muted">© 2026 Friends And Foes Studio</span>
-      <span class="color-fg-muted">Built with &lt;3 and GitHub Primer CSS</span>
+      <a href="https://friendsandfoesofficial.itch.io" class="color-fg-muted" target="_blank">itch.io</a>
     </div>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
