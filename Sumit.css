@@ -1,0 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	background-color: skyblue;
+	outline-color: red;
+}
