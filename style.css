@@ -1,9 +1,23 @@
 * {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
-button {
-	background-color: skyblue;
-	outline-color: red;
+body {
+	background: #111;
+	color: #eee;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 100px;
+}
+
+#container {
+	max-width: 400px;
+	margin: 40px auto;
+	background: #0d1117;
+	border: 1px Solid;
+	border-radius: 6px;
 }
